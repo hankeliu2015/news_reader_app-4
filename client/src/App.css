@@ -39,7 +39,7 @@ nav{
   background-color: coral;
 }
 
-/* .nav-links{
+.nav-links{
   min-height: 50px;
   width: 100%;
   background-color: coral;
@@ -49,4 +49,9 @@ nav{
 .nav-links a{
   float: left;
   padding: 15px 15px 10px 0;
-} */
+}
+
+.story-cards ol li:nth-child(odd) .card{
+  background-color: #f4f4f4;
+  border-bottom: 1px solid coral;
+}

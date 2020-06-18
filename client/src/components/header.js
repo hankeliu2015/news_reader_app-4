@@ -7,10 +7,12 @@ export default function header(props) {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <p>
-        {props.username ? `Hi ${props.username}!` : '' } Welcome to News Feed from Hacker News. Please sign in to add your comments or post your own stories.
-        </p>
-      
+          <h3>Welcome to News Feed</h3>
+
+          <p>
+          {props.username ? `Hello ${props.username}!` : 'Please sign in to add your comments or post your own stories.' }
+          </p>
+
       </header>
     </div>
   )

@@ -2,7 +2,7 @@ export default function fetchPosts() {
   return dispatch => {
     dispatch({type: 'LOADING_POSTS'});
     return (
-      fetch('http://localhost:3000/api/v1/posts')
+      fetch('https://news-reader-react.herokuapp.com/api/v1/posts')
       .then(resq => resq.json())
       .then(posts => {
 

@@ -16,6 +16,7 @@ import NewPost from './components/newPost';
 import PostEdit from './components/PostEdit';
 import NewComment from './components/NewComment'
 import Container from 'react-bootstrap/Container';
+import "react-bootstrap/dist/react-bootstrap.min.js";
 
 function App() {
   return (

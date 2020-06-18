@@ -9,14 +9,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
+  /* background-color: #282c34; */
+  background: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591554342/background-skyline.gif") no-repeat center -180px;
+  min-height: 45vh;
+  width: 100%;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  text-align: center;
   font-size: calc(4px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
 .App-link {
@@ -34,7 +37,7 @@
 
 nav{
   float: right;
-  padding-right: 15px;
+  padding-right: 15px 15px 0 0;
   margin: 0 10px;
   background-color: coral;
 }

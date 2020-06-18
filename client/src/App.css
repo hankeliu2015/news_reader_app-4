@@ -36,4 +36,17 @@ nav{
   float: right;
   padding-right: 15px;
   margin: 0 10px;
+  background-color: coral;
 }
+
+/* .nav-links{
+  min-height: 50px;
+  width: 100%;
+  background-color: coral;
+  color: #fff;
+}
+
+.nav-links a{
+  float: left;
+  padding: 15px 15px 10px 0;
+} */

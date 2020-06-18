@@ -3,7 +3,7 @@ export function likeStory(votes, valueCSRF) {
   return dispatch => {
     dispatch({type: 'UPLOADING_VOTE'});
     return (
-      fetch('http://localhost:3000/likes', {
+      fetch('https://news-reader-react.herokuapp.com/likes', {
 
         method: 'POST',
         headers: {

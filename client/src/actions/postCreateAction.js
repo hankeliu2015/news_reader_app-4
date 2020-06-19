@@ -2,7 +2,7 @@ export function postUpload(postData, valueCSRF, push) {
   return dispatch => {
     dispatch({type: 'LOADING_POST'});
     return (
-      fetch('http://localhost:3000/api/v1/posts', {
+      fetch('/api/v1/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

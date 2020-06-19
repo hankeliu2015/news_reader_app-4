@@ -2,7 +2,7 @@ export function deletePost(postId, postValue, valueCSRF) {
   return dispatch => {
     dispatch({type: 'LOADING_DELETEPOST'});
     return (
-      fetch(`http://localhost:3000/api/v1/posts/${postId}`, {
+      fetch(`/api/v1/posts/${postId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

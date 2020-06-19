@@ -3,7 +3,7 @@ export function likePost(postId, voteValue, valueCSRF) {
   return dispatch => {
     dispatch({type: 'UPLOADING_POSTLIKE'});
     return (
-      fetch(`https://news-reader-react.herokuapp.com/api/v1/posts/${postId}`, {
+      fetch(`http://localhost:3000/api/v1/posts/${postId}`, {
 
       method: 'PUT',
       headers: {

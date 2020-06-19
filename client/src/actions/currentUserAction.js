@@ -3,7 +3,7 @@ export default function currentUserFetch() {
     dispatch({type: 'LOADING_USER'});
 
     return (
-      fetch('https://news-reader-react.herokuapp.com/api/v1/current_user')
+      fetch('/api/v1/current_user')
       .then(resq => resq.json())
       .then(user => {
         dispatch({type: 'FETCHING_USER', payload: user })

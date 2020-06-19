@@ -16,15 +16,15 @@ module NewsReader
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    # config.api_only = true
+    # the following moved to cors.rb.
+    # Rails.application.config.middleware.insert_before 0, Rack::Cors do
+    #   allow do
+    #     origins 'https://news-reader-react.herokuapp.com'
+    #     resource '*',
+    #     headers: :any,
+    #     methods: [:get, :post, :patch, :put, :delete, :options, :head]
+    #   end
+    # end
 
-    Rails.application.config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'https://news-reader-react.herokuapp.com'
-        resource '*',
-        headers: :any,
-        methods: [:get, :post, :patch, :put, :delete, :options, :head]
-      end
-    end
   end
 end

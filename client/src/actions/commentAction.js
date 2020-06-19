@@ -3,7 +3,7 @@ export function commentUpload(storyComment, valueCSRF) {
   return dispatch => {
     dispatch({type: 'UPLOADING_COMMENT'});
     return (
-      fetch('http://localhost:3000/comments', {
+      fetch('/comments', {
 
       method: 'POST',
       headers: {

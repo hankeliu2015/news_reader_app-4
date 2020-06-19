@@ -3,7 +3,7 @@ export function likeAllOnStoriesFetch(itemId) {
   return dispatch => {
     dispatch({type: 'LOADING_VOTE'});
     return (
-      fetch(`http://localhost:3000/likes`)
+      fetch(`/likes`)
       .then(resp => resp.json())
       .then(likes => {
         // debugger

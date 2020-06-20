@@ -6,7 +6,7 @@ import { commentUpload } from '../actions/commentAction';
 class NewComment extends Component {
 
   state = {
-    story_comment: ""     //need to be the same as database column
+    story_comment: "please add your comments here"     //need to be the same as database column
   }
 
   handleOnChange = event => {
@@ -35,13 +35,11 @@ class NewComment extends Component {
 
   render() {
     return (
-      <div>
+      <div className="comment-form">
         <form onSubmit={this.handleOnSubmit}>
-          <label>Please add your comment</label>
+          <textarea value={this.state.story_comment} name="story_comment" rows="2" cols="80" onChange={this.handleOnChange}></textarea>
           <br></br>
-          <textarea value={this.state.story_comment} name="story_comment" rows="5" cols="60" onChange={this.handleOnChange}></textarea>
-          <br></br>
-          <button type="submit">Submit</button>
+          <button type="submit">Submit Comments</button>
         </form>
       </div>
     )

@@ -9,7 +9,7 @@ export default function StoryShow(props) {
 
     return (
       <div className="story-card-container">
-        <h4>{props.story.title}</h4>
+        <h3>{props.story.title}</h3>
         <p>{props.story.text}</p>
         <p>Published at: {timeString}</p>
       </div>
@@ -18,8 +18,8 @@ export default function StoryShow(props) {
     let timeString = "Time is not available";
 
     return (
-      <div>
-        <h4>{props.story.title}</h4>
+      <div className="story-card-container">
+        <h3>{props.story.title}</h3>
         <p>{props.story.text}</p>
         <p>Time: {timeString}</p>
       </div>

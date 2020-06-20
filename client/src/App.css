@@ -85,3 +85,25 @@ nav{
   color: #926239;
   margin-top: 1rem;
 }
+
+.comment-form{
+  background-color:  #f4f4f4;
+  padding: 1rem;
+}
+.comment-form button{
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #926239;
+  border: 1px solid #936239;
+  margin-top: 10px;
+}
+
+.comment-form form textarea{
+  color: #926239;
+  text-align: center;
+}
+.comments-container{
+  background-color:  #926239;
+  padding: 1rem 0;
+  color: #fff;
+}

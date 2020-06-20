@@ -20,6 +20,8 @@ class LikesController < ApplicationController
 
   def create
     if user_signed_in?
+      # binding.pry
+
       if like = Like.find_by(item_id: params["item_id"])
 
         updated_vote = like["vote"] + 1
@@ -30,7 +32,6 @@ class LikesController < ApplicationController
         end
 
       else
-        # binding.pry
         if like = Like.create(like_params)
           like.update(vote: 1)
           render json: like, status: :created

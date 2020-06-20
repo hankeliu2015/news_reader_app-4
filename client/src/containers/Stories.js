@@ -24,13 +24,14 @@ class Stories extends Component {
         if (this.props.allLikes === true ) {
           foundLike = this.props.allLikes.find(like => parseInt(like.item_id) === (story ? story.id : -1))
         }
-
         return (
         <li key={index}>
           <StoryCard story = {story} like = {foundLike ? foundLike.vote : 0 } />
         </li>
       )
     })
+
+    // debugger
 
     return (
       <div>

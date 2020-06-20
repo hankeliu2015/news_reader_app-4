@@ -59,3 +59,28 @@ nav{
   background-color: #f4f4f4;
   border-bottom: 1px solid coral;
 }
+
+.story-card-container{
+  /* opacity: 0.9; */
+  background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591888252/beach-sand.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  border: 1px solid coral;
+}
+
+.story-card-container h3{
+  font-size: 50px;
+  line-height: 1.2;
+  color: #926239;
+}
+.story-card-container p{
+  line-height: 1.8;
+  color: #926239;
+}

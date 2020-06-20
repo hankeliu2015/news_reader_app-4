@@ -8,11 +8,11 @@ export default function StoryShow(props) {
     let timeString = storyTime.toLocaleString();
 
     return (
-      <Card body>
-        <Card.Header>{props.story.title}</Card.Header>
-        <Card.Text>{props.story.text}</Card.Text>
-        <Card.Footer>Published at: {timeString}</Card.Footer>
-      </Card>
+      <div className="story-card-container">
+        <h4>{props.story.title}</h4>
+        <p>{props.story.text}</p>
+        <p>Published at: {timeString}</p>
+      </div>
     )
   } else {
     let timeString = "Time is not available";

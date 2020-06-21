@@ -31,9 +31,9 @@ class Posts extends Component {
     })
 
     return (
-      <div >
+      <div>
         <div className="post-cards-header"></div>
-        <div class="newsletter">
+        <div className="newsletter">
           <h3>Post your own story</h3>
           <NavLink to="/newpost" className="button">Click to post</NavLink>
         </div>

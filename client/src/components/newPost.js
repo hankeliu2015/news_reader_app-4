@@ -29,30 +29,27 @@ class NewPost extends Component {
   render() {
     return (
       <div >
-
-        <header className="post-form-footer">
+        <header className="post-form-header">
           <p>
-            {this.props.userPosts.length !== 0 ? (`Your Post is successfully Published`) : `Hi ${this.props.user.username}, Please click on Submit to Publish your Post`}
+            {this.props.userPosts.length !== 0 ? (`Your Post is successfully Published`) : `Hi ${this.props.user.username}, You can share your own story`}
           </p>
         </header>
 
         <form onSubmit={this.handleOnSubmit} className="post-form-container">
           <img src="https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592702004/logo_brush.png"></img>
-          <h5>Your Post Title</h5>
+          <label>Title</label>
           <input type="text" name="title" onChange={this.handleOnChange} value={this.state.title}></input>
-          <br></br>
-          <label>Post Content</label>
-          <br></br>
-          <textarea rows="5" cols="60" name="content" onChange={this.handleOnChange} value={this.state.content}></textarea>
+
+          <label>Content</label>
+
+          <textarea rows="4" name="content" onChange={this.handleOnChange} value={this.state.content}></textarea>
 
           <br></br>
           <button variant="outline-primary" type="submit">Submit</button>
         </form>
 
         <footer className="post-form-footer">
-          <p>
-            Responsive Web Design, Copyrigth &copy; 2019
-          </p>
+          <p>NewsReader App, Copyrigth &copy; 2019</p>
         </footer>
 
       </div>

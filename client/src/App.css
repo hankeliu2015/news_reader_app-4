@@ -97,6 +97,10 @@ nav{
   border: 1px solid #936239;
   margin-top: 10px;
 }
+.comment-form button:hover{
+  color: #fff;
+  background-color: #936239;
+}
 
 .comment-form form textarea{
   color: #926239;
@@ -109,8 +113,46 @@ nav{
 }
 
 .post-form-container{
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid coral;
+  padding-bottom: 1rem;
+}
+
+.post-form-container input, .post-form-container textarea{
+  width: 75%;
   border: 1px solid coral;
 }
+.post-form-container *{
+  padding: 1% 0;
+}
+.post-form-container label{
+  font-size: 1.6rem;
+}
+
+.post-form-container button{
+  color: coral;
+  padding: 3px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid coral;
+}
+.post-form-container button:hover{
+  color: #fff;
+  background-color: coral;
+}
+
+.post-form-header{
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  color: coral;
+}
+
 .post-form-footer{
   background-color: coral;
   min-height: 50px;

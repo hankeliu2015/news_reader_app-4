@@ -160,3 +160,23 @@ nav{
   color: #fff;
   padding: 15px 0 10px 0;
 }
+
+.post-cards-container{
+  border: 1px solid coral;
+}
+
+.post-cards-header{
+  background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591554342/background-skyline.gif");
+  background-position: center -200px;
+  background-repeat: none;
+  min-height: 30vh;
+}
+
+.newsletter{
+  background-color: #35424a;
+  color: #fff;
+  padding: 15px;
+}
+.post-cards-container .card{
+  background-color: #f4f4f4;
+}

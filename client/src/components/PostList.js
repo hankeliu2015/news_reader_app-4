@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function postList(props) {
     return (
-      <div>
+      <div class="post-cards-container">
         {props.loading ? "...Posts Loading" : props.posts}
 
         {/*<h6>

@@ -6,7 +6,8 @@ import fetchPosts from '../actions/postsFetchAction';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import PostCard from '../components/PostCard'
+import PostCard from '../components/PostCard';
+import { NavLink } from 'react-router-dom'
 
 class Posts extends Component {
 
@@ -34,7 +35,7 @@ class Posts extends Component {
         <div className="post-cards-header"></div>
         <div class="newsletter">
           <h3>Post your own story</h3>
-          <button>Click to Post</button>
+          <NavLink to="/newpost" className="button">Click to post</NavLink>
         </div>
         <PostList posts={posts} userPosts={userPosts} loading={this.props.loading} />
       </div>

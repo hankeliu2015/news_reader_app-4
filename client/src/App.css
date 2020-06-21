@@ -36,14 +36,16 @@
   }
 }
 
-button{
+.button{
+  background-color: #fff;
   border-radius: 10px;
   padding: 5px 10px;
   color: coral;
   border: 1px solid coral;
 }
-button:hover{
+.button:hover{
   color: #fff;
+  text-decoration: none;
   background-color: coral;
 }
 

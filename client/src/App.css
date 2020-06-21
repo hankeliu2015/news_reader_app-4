@@ -11,13 +11,15 @@
 
 .App-header {
   /* background-color: #282c34; */
-  background: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591554342/background-skyline.gif") no-repeat center -180px;
-  min-height: 45vh;
+  background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592764588/showcase.jpg");
+  background-repeat: none;
+  background-position: -200px -400px;
+  min-height: 50vh;
   width: 100%;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: flex-start;
   text-align: center;
   font-size: calc(4px + 2vmin);
   color: #fff;

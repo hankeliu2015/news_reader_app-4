@@ -107,3 +107,14 @@ nav{
   padding: 1rem 0;
   color: #fff;
 }
+
+.post-form-container{
+  border: 1px solid coral;
+}
+.post-form-footer{
+  background-color: coral;
+  min-height: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0 10px 0;
+}

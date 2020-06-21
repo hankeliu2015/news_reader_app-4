@@ -28,8 +28,16 @@ class NewPost extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleOnSubmit}>
+      <div >
+
+        <header className="post-form-footer">
+          <p>
+            {this.props.userPosts.length !== 0 ? (`Your Post is successfully Published`) : `Hi ${this.props.user.username}, Please click on Submit to Publish your Post`}
+          </p>
+        </header>
+
+        <form onSubmit={this.handleOnSubmit} className="post-form-container">
+          <img src="https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592702004/logo_brush.png"></img>
           <h5>Your Post Title</h5>
           <input type="text" name="title" onChange={this.handleOnChange} value={this.state.title}></input>
           <br></br>
@@ -41,9 +49,11 @@ class NewPost extends Component {
           <button variant="outline-primary" type="submit">Submit</button>
         </form>
 
-        <h6>
-          {this.props.userPosts.length !== 0 ? (`Your Post is successfully Published`) : `Hi ${this.props.user.username}, Please click on Submit to Publish your Post`}
-        </h6>
+        <footer className="post-form-footer">
+          <p>
+            Responsive Web Design, Copyrigth &copy; 2019
+          </p>
+        </footer>
 
       </div>
     )

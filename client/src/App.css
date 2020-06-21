@@ -36,6 +36,17 @@
   }
 }
 
+button{
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: coral;
+  border: 1px solid coral;
+}
+button:hover{
+  color: #fff;
+  background-color: coral;
+}
+
 nav{
   float: right;
   padding: 15px 15px 0 0;
@@ -176,6 +187,9 @@ nav{
   background-color: #35424a;
   color: #fff;
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .post-cards-container .card{
   background-color: #f4f4f4;

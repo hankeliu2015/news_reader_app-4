@@ -33,7 +33,7 @@ class Posts extends Component {
       <div >
         <div className="post-cards-header"></div>
         <div class="newsletter">
-          <h1>Post your own story</h1>
+          <h3>Post your own story</h3>
           <button>Click to Post</button>
         </div>
         <PostList posts={posts} userPosts={userPosts} loading={this.props.loading} />

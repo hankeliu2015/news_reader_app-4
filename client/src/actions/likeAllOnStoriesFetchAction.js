@@ -1,7 +1,7 @@
 export function likeAllOnStoriesFetch(itemId) {
 
   return dispatch => {
-    dispatch({type: 'LOADING_VOTE'});
+    dispatch({type: 'UPLOADING_VOTE'});
     return (
       fetch(`/likes`)
       .then(resp => resp.json())

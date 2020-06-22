@@ -26,9 +26,6 @@ class Comments extends Component {
   reloadSingleStory = () => {
 
     const story = this.props.singleStory
-
-    const userName = this.props.user.username
-
     const storyComments = this.props.comments.filter(comment => parseInt(comment.story_id) ===  story.id)
 
     const displayComments = storyComments.slice(0).reverse().map((comment, index) => {
@@ -46,12 +43,26 @@ class Comments extends Component {
     })
 
     if (story) {
-      return  (
+      return (
         <div>
           <StoryShow story={story} />
-          <p>{userName}</p>
           <NewComment storyId={story.id} />
           <CommentList displayComments={displayComments} />
+        </div>
+      )
+    } else {
+      return (
+        <div> ...loading </div> //need another condition to remind user back to storylist.
+      )
+    }
+  }
+
+  reloadStoryWithoutLogin = () => {
+    const story = this.props.singleStory
+    if (story) {
+      return (
+        <div>
+          <StoryShow story={story} />
         </div>
       )
     } else {
@@ -99,19 +110,31 @@ class Comments extends Component {
   }
 
   render() {
-    if (this.props.match.path === "/comments/:id") {
-      return (
+    const userName = this.props.user.username;
+    if(!!userName){
+      if (this.props.match.path === "/comments/:id") {
+        return (
+          <div>
+            {this.reloadSingleStory()}
+          </div>
+        )
+      } else if (this.props.match.path === "/postcomments/:id") {
+        return (
+          <div>
+            {this.reloadSinglePost()}
+          </div>
+        )
+      }
+
+    } else {
+      return(
         <div>
-          {this.reloadSingleStory()}
-        </div>
-      )
-    } else if (this.props.match.path === "/postcomments/:id") {
-      return (
-        <div>
-          {this.reloadSinglePost()}
+          {this.reloadStoryWithoutLogin()}
+          <p>Please signup or login to add comments and post your own news</p>
         </div>
       )
     }
+
   }
 }
 

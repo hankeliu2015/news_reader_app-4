@@ -6,7 +6,8 @@ import PostShow from '../components/postShow';
 import { connect } from 'react-redux';
 import { fetchSingleStory } from '../actions/singleStoryAction';
 import { fetchSinglePost } from '../actions/singlePostAction';
-import fetchComments from '../actions/commentFetchAction'
+import fetchComments from '../actions/commentFetchAction';
+import currentUserFetch from '../actions/currentUserAction'
 
 class Comments extends Component {
 
@@ -14,15 +15,19 @@ class Comments extends Component {
     if (this.props.match.path === "/comments/:id") {
       this.props.fetchSingleStory(this.props.match.params.id);
       this.props.fetchComments();
+      this.props.currentUserFetch();
     } else if (this.props.match.path === "/postcomments/:id"){
       this.props.fetchSinglePost(this.props.match.params.id);
       this.props.fetchComments();
+      this.props.currentUserFetch();
     }
   }
 
   reloadSingleStory = () => {
 
     const story = this.props.singleStory
+
+    const userName = this.props.user.username
 
     const storyComments = this.props.comments.filter(comment => parseInt(comment.story_id) ===  story.id)
 
@@ -44,6 +49,7 @@ class Comments extends Component {
       return  (
         <div>
           <StoryShow story={story} />
+          <p>{userName}</p>
           <NewComment storyId={story.id} />
           <CommentList displayComments={displayComments} />
         </div>
@@ -114,8 +120,9 @@ const mapStateToProps = state => {
     stories: state.storyReducer.stories,
     singleStory: state.storyReducer.singleStory,
     comments: state.commentReducer.comments,
-    singlePost: state.postReducer.singlePost
+    singlePost: state.postReducer.singlePost,
+    user: state.currentUserReducer.user
   }
 }
 
-export default connect(mapStateToProps, {fetchSingleStory, fetchComments, fetchSinglePost})(Comments)
+export default connect(mapStateToProps, {fetchSingleStory, fetchComments, fetchSinglePost, currentUserFetch})(Comments)

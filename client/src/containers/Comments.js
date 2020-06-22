@@ -3,6 +3,7 @@ import NewComment from '../components/NewComment';
 import CommentList from '../components/commentList';
 import StoryShow from '../components/storyShow';
 import PostShow from '../components/postShow';
+import LoginReminder from '../components/loginReminder';
 import { connect } from 'react-redux';
 import { fetchSingleStory } from '../actions/singleStoryAction';
 import { fetchSinglePost } from '../actions/singlePostAction';
@@ -130,7 +131,7 @@ class Comments extends Component {
       return(
         <div>
           {this.reloadStoryWithoutLogin()}
-          <p>Please signup or login to add comments and post your own news</p>
+          <LoginReminder/>
         </div>
       )
     }

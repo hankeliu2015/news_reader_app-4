@@ -25,6 +25,19 @@
   color: #fff;
 }
 
+.login-reminder {
+  background-color: #926239;
+  min-height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -50,6 +63,21 @@
   color: #fff;
   text-decoration: none;
   background-color: coral;
+}
+
+.login-reminder-button{
+  background-color: coral;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 10px;
+}
+
+.login-reminder-button:hover{
+  color: coral;
+  background-color: #fff;
+  text-decoration: none;
 }
 
 nav{
@@ -106,6 +134,7 @@ nav{
   background-color:  #f4f4f4;
   padding: 1rem;
 }
+
 .comment-form button{
   border-radius: 10px;
   padding: 5px 10px;

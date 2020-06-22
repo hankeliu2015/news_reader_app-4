@@ -44,11 +44,8 @@ class Comments extends Component {
       return  (
         <div>
           <StoryShow story={story} />
-          <hr></hr>
           <NewComment storyId={story.id} />
-          <hr></hr>
           <CommentList displayComments={displayComments} />
-          <hr></hr>
         </div>
       )
     } else {

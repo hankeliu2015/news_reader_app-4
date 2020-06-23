@@ -1,8 +1,10 @@
 import React from 'react';
+import Newsletter from '../components/newsletter';
 
 export default function postList(props) {
     return (
       <div className="post-cards-container">
+        <Newsletter />
         {props.loading ? "...Posts Loading" : props.posts}
 
         {/*<h6>

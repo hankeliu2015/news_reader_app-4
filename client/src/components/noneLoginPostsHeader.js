@@ -5,8 +5,8 @@ export default function noneLoginPostsHeader(props) {
     <div>
       <header className="none-login-posts-header">
 
-        <h3>Welcome to Users Posts</h3>
-        <p>Please Sign Up to access Users Posts</p>
+        <h1>Dear Customer, welcome to News Feed App</h1>
+        <p>Please Login to access Users Posts</p>
       </header>
     </div>
   )

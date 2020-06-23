@@ -22,25 +22,29 @@ class Posts extends Component {
     const currentUser = this.props.user.username;
     const userPosts = this.props.userPosts.map((post, index) => <li key={post.id}>Title: {post.title}; Content: {post.content} Created at: {post.created_at}</li>)
 
-    if (currentUser) {
-      const posts = this.props.posts.slice(0).reverse().sort((p1, p2) => p2.like - p1.like).map((post, index) => {
+    let posts=0;
+    let userLoginReminder=0;
+
+    if(!currentUser){
+      userLoginReminder = <LoginReminder />;
+    } else {
+      posts = this.props.posts.slice(0).reverse().sort((p1, p2) => p2.like - p1.like).map((post, index) => {
         let postDate = new Date(post.created_at)
         let dateString = postDate.toDateString()
-
-        return(
-          <div key={post.id}>
-            <PostCard post={post} postDate={postDate} dateString = {dateString} push = {this.props.history.push}/>
-          </div>
-        )
-      })
+          return(
+            <div key={post.id}>
+              <PostCard post={post} postDate={postDate} dateString = {dateString} push = {this.props.history.push}/>
+            </div>
+          )
+        })
     }
 
     return (
       <div>
         <div className="post-cards-header"></div>
-        <div>
-          {(!currentUser) ? <LoginReminder /> : <PostList posts={posts} userPosts={userPosts} loading={this.props.loading} />}
-        </div>
+
+        {(!currentUser) ? <div>{userLoginReminder}</div> : <PostList posts={posts} userPosts={userPosts} loading={this.props.loading} />}
+
       </div>
     )
   }

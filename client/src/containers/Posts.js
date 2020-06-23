@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NewPost from '../components/newPost';
 import PostList from '../components/PostList';
 import LoginReminder from '../components/loginReminder';
+import NoneLoginPostsHeader from '../components/noneLoginPostsHeader';
 import { connect } from 'react-redux';
 import fetchPosts from '../actions/postsFetchAction';
 import Card from 'react-bootstrap/Card';
@@ -24,6 +25,7 @@ class Posts extends Component {
 
     let posts=0;
     let userLoginReminder=0;
+    let userNoneLoginPostsHeader=<NoneLoginPostsHeader />
 
     if(!currentUser){
       userLoginReminder = <LoginReminder />;
@@ -41,10 +43,7 @@ class Posts extends Component {
 
     return (
       <div>
-        <div className="post-cards-header"></div>
-
-        {(!currentUser) ? <div>{userLoginReminder}</div> : <PostList posts={posts} userPosts={userPosts} loading={this.props.loading} />}
-
+        {(!currentUser) ? <div>{userNoneLoginPostsHeader} {userLoginReminder}</div> : <PostList posts={posts} userPosts={userPosts} loading={this.props.loading} />}
       </div>
     )
   }

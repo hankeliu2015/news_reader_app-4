@@ -207,15 +207,31 @@ nav{
   padding: 15px 0 10px 0;
 }
 
-.post-cards-container{
+.posts-container{
   border: 1px solid coral;
 }
 
-.post-cards-header{
+.posts-header{
   background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591554342/background-skyline.gif");
   background-position: center -200px;
   background-repeat: none;
   min-height: 30vh;
+}
+
+.none-login-posts-header {
+  /* background-color: #282c34; */
+  background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591906309/information-sign-on-shelf-251225.jpg");
+  background-repeat: none;
+  background-position: center;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(4px + 2vmin);
+  color: #fff;
 }
 
 .newsletter{
@@ -226,6 +242,6 @@ nav{
   flex-direction: row;
   justify-content: space-around;
 }
-.post-cards-container .card{
+.posts-container .card{
   background-color: #f4f4f4;
 }

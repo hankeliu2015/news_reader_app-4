@@ -218,42 +218,27 @@ nav{
   min-height: 30vh;
 }
 
-.none-login-posts-header::after {
-  /* background-color: #282c34; */
-  content: '';
-  display: block;
+.none-login-posts-header {
   background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591906309/information-sign-on-shelf-251225.jpg");
   background-repeat: none;
   background-position: center;
+  background-size: cover;
   min-height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   filter: blur(5px);
   transition: all 1000ms;
+  color: #fff;
 }
 
-.none-login-posts-header:hover::after {
+.none-login-posts-header:hover {
   filter: blur(0px);
 }
-.none-login-posts-header:hover {
-  filter: blur(2px);
-}
 
-.content{
-  position:absolute;
-  z-index: 1;
-  color: #fff;
-  top: 30%;
-  /* left: 20%; */
-  text-align: center;
-  transition: all 5000ms;
-  width:80%;
-
-}
 .newsletter{
   background-color: #35424a;
   color: #fff;

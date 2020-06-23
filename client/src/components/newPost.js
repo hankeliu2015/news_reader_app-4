@@ -27,11 +27,13 @@ class NewPost extends Component {
   }
 
   render() {
+    const userName = this.props.user.username;
+
     return (
-      <div >
+      <div>
         <header className="post-form-header">
           <p>
-            {this.props.userPosts.length !== 0 ? (`Your Post is successfully Published`) : `Hi ${this.props.user.username}, You can share your own story`}
+            {!userName ? <p>Please <a className="button" href="/users/sign_up">Sign up</a> to post your stories</p> : `Hi ${userName}, You can share your own story`}
           </p>
         </header>
 

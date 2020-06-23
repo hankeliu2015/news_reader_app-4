@@ -185,6 +185,7 @@ nav{
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid coral;
+  margin-top: 1rem;
 }
 .post-form-container button:hover{
   color: #fff;

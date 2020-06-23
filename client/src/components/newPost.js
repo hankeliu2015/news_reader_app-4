@@ -46,8 +46,10 @@ class NewPost extends Component {
 
           <textarea rows="4" name="content" onChange={this.handleOnChange} value={this.state.content}></textarea>
 
-          <br></br>
-          <button variant="outline-primary" type="submit">Submit</button>
+          <div>
+            {!userName ? <a className="button" href="/users/sign_up">User Sign Up</a> : <button variant="outline-primary" type="submit">Submit</button>}
+          </div>
+
         </form>
 
         <footer className="post-form-footer">

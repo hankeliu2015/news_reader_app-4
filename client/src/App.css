@@ -99,6 +99,11 @@ nav{
   padding: 15px 15px 10px 0;
 }
 
+.story-cards ol{
+  list-style-type: none;
+  display: contents;
+}
+
 .story-cards ol li:nth-child(odd) .card{
   background-color: #f4f4f4;
   border-bottom: 1px solid coral;

@@ -270,10 +270,8 @@
     padding: 10px;
     color: coral;
   }
-  .devise-nav-container p{
-    text-align: center;
-  }
-  .devise-nav-container p a{
+  .devise-nav-container p,
+  .devise-nav-container a{
     text-align: center;
     color: coral;
   }

@@ -94,8 +94,10 @@ nav{
   color: #fff;
 }
 
-.nav-links a{
-  float: left;
+.nav-links li{
+  float:left;
+  display: inline;
+  list-style: none;
   padding: 15px 15px 10px 0;
 }
 

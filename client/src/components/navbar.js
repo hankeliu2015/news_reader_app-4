@@ -12,18 +12,16 @@ const linkStyle = {
 
 export default function Navbar() {
     return (
-      <div >
-        <ul className={"nav-links"}>
-          <li>
-            <NavLink to="/">Hacker News Feed</NavLink>
-          </li>
-          <li>
-            <NavLink to="/posts">Users Posts</NavLink>
-          </li>
-          <li>
-            <NavLink to="/newpost">Post Your Story</NavLink>
-          </li>
-        </ul>
+      <div className={"nav-links-container"}>
+        <div className={"nav-links"}>
+          <NavLink to="/">Hacker News Feed</NavLink>
+
+          <NavLink to="/posts">Users Posts</NavLink>
+
+          <NavLink to="/newpost">Post Your Story</NavLink>
+
+        </div>
+
       </div>
     )
 }

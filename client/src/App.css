@@ -87,18 +87,24 @@ nav{
   background-color: coral;
 }
 
-.nav-links{
+.nav-links-container{
   min-height: 50px;
   width: 100%;
   background-color: coral;
   color: #fff;
 }
 
-.nav-links li{
+.nav-links {
+  margin: auto;
+  padding: 10px 0;
+  display:flex;
+  align-items: center;
+}
+.nav-links a{
   float:left;
   display: inline;
   list-style: none;
-  padding: 15px 15px 10px 0;
+  padding: 10px 10px;
 }
 
 .story-cards ol{

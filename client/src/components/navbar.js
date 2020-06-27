@@ -15,11 +15,8 @@ export default function Navbar() {
       <div className={"nav-links-container"}>
         <div className={"nav-links"}>
           <NavLink to="/">Hacker News Feed</NavLink>
-
           <NavLink to="/posts">Users Posts</NavLink>
-
           <NavLink to="/newpost">Post Your Story</NavLink>
-
         </div>
 
       </div>

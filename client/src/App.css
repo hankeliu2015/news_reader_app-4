@@ -261,19 +261,20 @@
   background-color: #f4f4f4;
 }
 
-@media(max-width: 768px){
-
+@media(max-width: 480px){
   .devise-nav-container{
-    clear:both;
     display: block;
-    position: static;
+    float: none;
     background-color: #fff;
-    margin-bottom: 100px;
-    padding: 20px;
+    margin: auto;
+    padding: 10px;
+    color: coral;
   }
-
-  .devise-nav-container > a{
-    color: coral ;
+  .devise-nav-container p{
+    text-align: center;
   }
-
+  .devise-nav-container p a{
+    text-align: center;
+    color: coral;
+  }
 }

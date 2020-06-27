@@ -260,3 +260,20 @@
 .posts-container .card{
   background-color: #f4f4f4;
 }
+
+@media(max-width: 768px){
+
+  .devise-nav-container{
+    clear:both;
+    display: block;
+    position: static;
+    background-color: #fff;
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+
+  .devise-nav-container > a{
+    color: coral ;
+  }
+
+}

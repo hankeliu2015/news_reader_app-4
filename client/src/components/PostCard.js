@@ -72,7 +72,7 @@ class PostCard extends Component{
 
           <Button variant="light">
             <Link to={`${this.props.post ? "/postcomments/" + this.props.post.id : 'posts'}`}>
-              <i class="fa fa-comments" aria-hidden="true"></i>
+              <i className="fa fa-comments" aria-hidden="true"></i>
               {this.props.post ? "Comments" : "This Post is missing"}
             </Link>
           </Button>
@@ -87,7 +87,7 @@ class PostCard extends Component{
           </form>
 
           <Button variant="light">
-            <i class="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
+            <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
           </Button>
 
 {/*
@@ -101,7 +101,7 @@ class PostCard extends Component{
 
 
           <form className="button-icon" onSubmit = {this.handleOnClickDelete}>
-            <button type="submit" value="Delete Post"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            <button type="submit" value="Delete Post"><i className="fa fa-trash" aria-hidden="true"></i></button>
           </form>
 
         </Card>

@@ -278,6 +278,12 @@
   color: #ff0000;
 }
 
+.post-card-header{
+  /* background-color: coral; */
+  color: coral;
+  font-size: 1.2rem;
+}
+
 @media(max-width: 480px){
   .devise-nav-container{
     display: block;

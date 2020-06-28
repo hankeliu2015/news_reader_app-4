@@ -64,7 +64,7 @@ class PostCard extends Component{
   render() {
     return (
         <Card body border="light">
-          <Card.Header>
+          <Card.Header className="post-card-header">
             Created at: {this.props.dateString}; By: {this.props.post.user.username}; Post Id: {this.props.post.id}
           </Card.Header>
           <Card.Title>{this.props.post.title}</Card.Title>

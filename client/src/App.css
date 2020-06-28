@@ -284,6 +284,21 @@
   font-size: 1.2rem;
 }
 
+.single-post-container{
+  /* opacity: 0.9; */
+  background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1591888252/beach-sand.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid coral;
+}
+
 @media(max-width: 480px){
   .devise-nav-container{
     display: block;

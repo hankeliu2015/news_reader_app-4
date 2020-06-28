@@ -8,7 +8,7 @@ export default function postShow(props) {
     let timeString = postTime.toLocaleString();
 
     return (
-      <Card body>
+      <Card body className="single-post-container">
         <Card.Header>{props.post.title}</Card.Header>
         <Card.Text>{props.post.content}</Card.Text>
         <Card.Footer>Published at: {timeString}</Card.Footer>

@@ -12,8 +12,8 @@ const linkStyle = {
 
 export default function Navbar() {
     return (
-      <div className={"nav-links-container"}>
-        <div className={"nav-links"}>
+      <div className={"react-navbar"}>
+        <div className={"react-nav-links"}>
           <NavLink to="/">Hacker News Feed</NavLink>
           <NavLink to="/posts">Users Posts</NavLink>
           <NavLink to="/newpost">Post Your Story</NavLink>

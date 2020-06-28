@@ -9,6 +9,52 @@
   margin: 3% 0 1% 0;
 }
 
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.devise-nav-container{
+  float: right;
+  padding: 20px 15px 0 0;
+  margin: 0 10px;
+  background-color: coral;
+}
+
+.devise-nav-container p,
+.devise-nav-container a{
+  color: #828282;
+}
+
+.react-navbar{
+  min-height: 30px;
+  width: 100%;
+  background-color: coral;
+}
+
+.react-nav-links {
+  display:flex;
+  align-items: center;
+  margin: auto;
+  padding: 10px 0;
+}
+.react-nav-links a{
+  padding: 10px 10px;
+  color: #828282;
+}
+
+.react-nav-links a:hover{
+  color: #000;
+}
+
 .App-header {
   /* background-color: #282c34; */
   background-image: url("https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592764588/showcase.jpg");
@@ -38,19 +84,6 @@
   color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .button{
   background-color: #fff;
   border-radius: 10px;
@@ -59,6 +92,7 @@
   border: 1px solid coral;
   text-align: center;
 }
+
 .button:hover{
   color: #fff;
   text-decoration: none;
@@ -78,30 +112,6 @@
   color: coral;
   background-color: #fff;
   text-decoration: none;
-}
-
-.devise-nav-container{
-  float: right;
-  padding: 20px 15px 0 0;
-  margin: 0 10px;
-  background-color: coral;
-}
-
-.nav-links-container{
-  min-height: 50px;
-  width: 100%;
-  background-color: coral;
-  color: #fff;
-}
-
-.nav-links {
-  display:flex;
-  align-items: center;
-  margin: auto;
-  padding: 10px 0;
-}
-.nav-links a{
-  padding: 10px 10px;
 }
 
 .story-cards ol{

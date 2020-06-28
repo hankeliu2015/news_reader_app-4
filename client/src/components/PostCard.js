@@ -62,6 +62,7 @@ class PostCard extends Component{
   }
 
   render() {
+    // debugger
     return (
         <Card body border="light">
           <Card.Header className="post-card-header">
@@ -74,13 +75,13 @@ class PostCard extends Component{
 
           {/*
             <Card.Title>{this.props.post.title}</Card.Title>
+            <Card.Text>{this.props.post.content}</Card.Text>
             */}
-          <Card.Text>{this.props.post.content}</Card.Text>
 
           <Button variant="light">
             <Link to={`${this.props.post ? "/postcomments/" + this.props.post.id : 'posts'}`}>
               <i className="fa fa-comments" aria-hidden="true"></i>
-              {this.props.post ? "Comments" : "This Post is missing"}
+              {this.props.post === true ? "  Comments" : "0"}
             </Link>
           </Button>
 

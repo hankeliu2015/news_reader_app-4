@@ -96,11 +96,8 @@ class Comments extends Component {
       return  (
         <div>
           <PostShow post={post} />
-          <hr></hr>
           <NewComment postId={post.id} />
-          <hr></hr>
           <CommentList displayComments={displayComments} />
-          <hr></hr>
         </div>
       )
     } else {

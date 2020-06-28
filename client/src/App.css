@@ -143,6 +143,9 @@
 .comment-form{
   background-color:  #f4f4f4;
   padding: 1rem;
+  border: 1px solid #926239;
+  margin: 5px 0 15px 0;
+  border-radius: 5px;
 }
 
 .comment-form button{
@@ -296,7 +299,7 @@
   align-items: center;
   text-align: center;
   padding: 5px;
-  border: 1px solid coral;
+  /* border: 1px solid coral; */
 }
 
 @media(max-width: 480px){

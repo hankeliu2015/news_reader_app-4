@@ -34,9 +34,9 @@ class Posts extends Component {
         let postDate = new Date(post.created_at)
         let dateString = postDate.toDateString()
           return(
-            <div key={post.id}>
+            <li key={post.id}>
               <PostCard post={post} postDate={postDate} dateString = {dateString} push = {this.props.history.push}/>
-            </div>
+            </li>
           )
         })
     }

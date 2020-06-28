@@ -257,8 +257,32 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.posts-container .card{
+/* .posts-container .card{
   background-color: #f4f4f4;
+} */
+
+.posts-container ol{
+  list-style-type: none;
+  display: contents;
+}
+
+/* .posts-container ol li .card{
+  border: 10px solid coral;
+} */
+
+.posts-container ol li:nth-child(odd) .card-body{
+  background-color: #f4f4f4;
+  border-bottom: 1px solid coral;
+  padding: 10px;
+}
+
+.button-icon{
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.icon-red{
+  color: #ff0000;
 }
 
 @media(max-width: 480px){

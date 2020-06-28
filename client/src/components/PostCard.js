@@ -70,26 +70,24 @@ class PostCard extends Component{
           <Card.Title>{this.props.post.title}</Card.Title>
           <Card.Text>{this.props.post.content}</Card.Text>
 
-        <Button variant="light">
+          <Button variant="light">
             <Link to={`${this.props.post ? "/postcomments/" + this.props.post.id : 'posts'}`}>
-              {this.props.post ? "Add Comments" : "This Post is missing"}
+              <i class="fa fa-comments" aria-hidden="true"></i>
+              {this.props.post ? "Comments" : "This Post is missing"}
             </Link>
           </Button>
 
-          <Button variant="light">
-            <form onSubmit = {this.handleOnClick}>
-              <input type="submit" value="upVote"/>
-            </form>
-          </Button>
+
+          <form style={{display: "inline"}} onSubmit = {this.handleOnClick}>
+            <button type="submit" value="upVote"><i className="fas fa-thumbs-up"></i></button>
+          </form>
+
+          <form className="button-icon" onSubmit = {this.handleOnClickDownVote}>
+            <button type="submit" value="downVote"><i className="fa fa-thumbs-down"></i></button>
+          </form>
 
           <Button variant="light">
-            <form onSubmit = {this.handleOnClickDownVote}>
-              <input type="submit" value="downVote"/>
-            </form>
-          </Button>
-
-          <Button variant="light">
-            Likes: {this.props.post.like}
+            <i class="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
           </Button>
 
 {/*
@@ -101,11 +99,11 @@ class PostCard extends Component{
   </Button>
   */}
 
-          <Button variant="light">
-            <form onSubmit = {this.handleOnClickDelete}>
-              <input type="submit" value="Delete Post"/>
-            </form>
-          </Button>
+
+          <form className="button-icon" onSubmit = {this.handleOnClickDelete}>
+            <button type="submit" value="Delete Post"><i class="fa fa-trash" aria-hidden="true"></i></button>
+          </form>
+
         </Card>
     )
   }

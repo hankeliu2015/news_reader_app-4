@@ -22,15 +22,15 @@
   }
 }
 
-.devise-nav-container{
+.devise-navbar{
   float: right;
-  padding: 20px 15px 0 0;
+  padding: 12px 15px 0px 0;
   margin: 0 10px;
   background-color: coral;
 }
 
-.devise-nav-container p,
-.devise-nav-container a{
+.devise-navbar p,
+.devise-navbar a{
   color: #828282;
 }
 
@@ -44,10 +44,10 @@
   display:flex;
   align-items: center;
   margin: auto;
-  padding: 10px 0;
+  padding: 7px 0;
 }
 .react-nav-links a{
-  padding: 10px 10px;
+  padding: 7px 10px;
   color: #828282;
 }
 
@@ -313,7 +313,7 @@
 }
 
 @media(max-width: 480px){
-  .devise-nav-container{
+  .devise-navbar{
     display: block;
     float: none;
     background-color: #fff;
@@ -321,8 +321,8 @@
     padding: 10px;
     color: coral;
   }
-  .devise-nav-container p,
-  .devise-nav-container a{
+  .devise-navbar p,
+  .devise-navbar a{
     text-align: center;
     color: coral;
   }

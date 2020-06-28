@@ -67,7 +67,14 @@ class PostCard extends Component{
           <Card.Header className="post-card-header">
             Created at: {this.props.dateString}; By: {this.props.post.user.username}; Post Id: {this.props.post.id}
           </Card.Header>
-          <Card.Title>{this.props.post.title}</Card.Title>
+
+          <Link to={`${this.props.post ? "/postcomments/" + this.props.post.id : 'posts'}`}>
+            {this.props.post ? this.props.post.title : "This Post is missing"}
+          </Link>
+
+          {/*
+            <Card.Title>{this.props.post.title}</Card.Title>
+            */}
           <Card.Text>{this.props.post.content}</Card.Text>
 
           <Button variant="light">

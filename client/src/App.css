@@ -257,18 +257,11 @@
   flex-direction: row;
   justify-content: space-around;
 }
-/* .posts-container .card{
-  background-color: #f4f4f4;
-} */
 
 .posts-container ol{
   list-style-type: none;
   display: contents;
 }
-
-/* .posts-container ol li .card{
-  border: 10px solid coral;
-} */
 
 .posts-container ol li:nth-child(odd) .card-body{
   background-color: #f4f4f4;

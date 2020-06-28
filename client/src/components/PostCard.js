@@ -78,7 +78,7 @@ class PostCard extends Component{
           </Button>
 
 
-          <form style={{display: "inline"}} onSubmit = {this.handleOnClick}>
+          <form className="button-icon" onSubmit = {this.handleOnClick}>
             <button type="submit" value="upVote"><i className="fas fa-thumbs-up"></i></button>
           </form>
 

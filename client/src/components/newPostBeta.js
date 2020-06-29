@@ -106,13 +106,13 @@ class NewPost extends Component {
 
           <div className="form-group">
             <fieldset disabled="">
-              <label className="control-label" for="disabledInput">Title</label>
+              <label className="control-label">Title</label>
               <input className="form-control" id="disabledInput" type="text" placeholder="Please add title ..." disabled=""></input>
             </fieldset>
           </div>
 
           <div className="form-group">
-             <label for="exampleTextarea">Content</label>
+             <label>Content</label>
              <textarea className="form-control" id="exampleTextarea" rows="3" placeholder="Please add content ..."></textarea>
            </div>
 

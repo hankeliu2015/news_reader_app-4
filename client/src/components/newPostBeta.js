@@ -31,14 +31,10 @@ class NewPost extends Component {
 
     return (
       <div>
-        <header className="post-form-header">
-          <div>
-            {!userName ? <p>Please have a simple user & password <a className="button" href="/users/sign_up">Sign up</a> to post your stories</p> : `Hi ${userName}, You can share your own story`}
-          </div>
-        </header>
 
+        {/*Bootswatch Testing*/}
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <a className="navbar-brand" href="#">NewsReader</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -51,40 +47,79 @@ class NewPost extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="#">Features</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-              </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="#">About</a>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
-              <input className="form-control mr-sm-2" type="text" placeholder="Search"></input>
-              <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              <button className="btn btn-secondary my-2 my-sm-0" type="submit">Login | Signup</button>
             </form>
           </div>
-
         </nav>
 
+        <div className="jumbotron">
+          <h1 className="display-3">Hello, customer!</h1>
+          <p className="lead">Please take a minute to simply register your user name, email and password. Your will be able to share your own stories and view other users comments. </p>
+          <hr className="my-4"></hr>
+          <p>Devise security adds additional security features required by modern web applications. </p>
+          <p className="lead">
+            <a className="btn btn-primary btn-lg" href="#" role="button">SignOn</a>
+          </p>
+        </div>
 
-        <form onSubmit={this.handleOnSubmit} className="post-form-container">
+        <hr></hr>
+        {/* Section for signed-on user*/}
+
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a className="navbar-brand" href="#">NewsReader</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarColor01">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Features</a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form className="form-inline my-2 my-lg-0">
+              <button className="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>
+            </form>
+          </div>
+        </nav>
+
+        <div className="jumbotron">
+          <h1 className="display-3">Hello, Henry!</h1>
+          <p className="lead">Welcome to News Reader App. Please add title and content for your post, and click on submit button to publish. </p>
+
+          <hr className="my-4"></hr>
+
           <img src="https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592702004/logo_brush.png"></img>
-          <label>Title</label>
-          <input type="text" name="title" onChange={this.handleOnChange} value={this.state.title}></input>
 
-          <label>Content</label>
-
-          <textarea rows="4" name="content" onChange={this.handleOnChange} value={this.state.content}></textarea>
-
-          <div>
-            {!userName ? <a className="button" href="/users/sign_up">User Sign Up</a> : <button variant="outline-primary" type="submit">Submit</button>}
+          <div className="form-group">
+            <fieldset disabled="">
+              <label className="control-label" for="disabledInput">Title</label>
+              <input className="form-control" id="disabledInput" type="text" placeholder="Please add title ..." disabled=""></input>
+            </fieldset>
           </div>
 
-        </form>
+          <div className="form-group">
+             <label for="exampleTextarea">Content</label>
+             <textarea className="form-control" id="exampleTextarea" rows="3" placeholder="Please add content ..."></textarea>
+           </div>
 
-        <footer className="post-form-footer">
-          <p>NewsReader App, Copyrigth &copy; 2019</p>
-        </footer>
+          <p className="lead">
+            <a className="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+          </p>
+        </div>
 
       </div>
     )

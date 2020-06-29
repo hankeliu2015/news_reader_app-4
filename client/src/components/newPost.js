@@ -32,9 +32,9 @@ class NewPost extends Component {
     return (
       <div>
         <header className="post-form-header">
-          <p>
+          <div>
             {!userName ? <p>Please have a simple user & password <a className="button" href="/users/sign_up">Sign up</a> to post your stories</p> : `Hi ${userName}, You can share your own story`}
-          </p>
+          </div>
         </header>
 
         <form onSubmit={this.handleOnSubmit} className="post-form-container">

@@ -87,30 +87,28 @@ class PostCard extends Component{
 
 
           <form className="button-icon" onSubmit = {this.handleOnClick}>
-            <button type="submit" value="upVote"><i className="fas fa-thumbs-up"></i></button>
+            <button className='button-noborder' type="submit" value="upVote"><i className="fas fa-thumbs-up"></i></button>
           </form>
 
           <form className="button-icon" onSubmit = {this.handleOnClickDownVote}>
-            <button type="submit" value="downVote"><i className="fa fa-thumbs-down"></i></button>
+            <button className='button-noborder' type="submit" value="downVote"><i className="fa fa-thumbs-down"></i></button>
           </form>
 
           <Button variant="light">
             <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
           </Button>
 
-{/*
-
-  <Button variant="light">
-  <form onSubmit = {this.handleOnClickEdit}>
-  <input type="submit" value="Edit Post"/>
-  </form>
-  </Button>
-  */}
-
-
           <form className="button-icon" onSubmit = {this.handleOnClickDelete}>
-            <button type="submit" value="Delete Post"><i className="fa fa-trash" aria-hidden="true"></i></button>
+            <button className='button-noborder' type="submit" value="Delete Post"><i className="fa fa-trash" aria-hidden="true"></i></button>
           </form>
+
+          {/*
+            <Button variant="light">
+            <form onSubmit = {this.handleOnClickEdit}>
+            <input type="submit" value="Edit Post"/>
+            </form>
+            </Button>
+            */}
 
         </Card>
     )

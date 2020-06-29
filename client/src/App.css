@@ -120,7 +120,7 @@
 }
 
 .story-cards ol li:nth-child(odd) .card{
-  background-color: #f4f4f4;
+  background-color: #fafaf0;
   border-bottom: 1px solid coral;
 }
 
@@ -277,7 +277,7 @@
 }
 
 .posts-container ol li:nth-child(odd) .card-body{
-  background-color: #f4f4f4;
+  background-color: #fafaf0;
   border-bottom: 1px solid coral;
   padding: 10px;
 }
@@ -285,6 +285,10 @@
 .button-icon{
   display: inline-block;
   padding: 0 10px;
+}
+
+.button-noborder{
+  border: none;
 }
 
 .icon-red{

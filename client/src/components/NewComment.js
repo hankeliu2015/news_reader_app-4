@@ -37,7 +37,7 @@ class NewComment extends Component {
     return (
       <div className="comment-form">
         <form onSubmit={this.handleOnSubmit}>
-          <textarea value={this.state.story_comment} name="story_comment" rows="2" cols="80" onChange={this.handleOnChange}></textarea>
+          <textarea value={this.state.story_comment} name="story_comment" rows="2" cols="50" onChange={this.handleOnChange}></textarea>
           <br></br>
           <button type="submit">Submit Comments</button>
         </form>

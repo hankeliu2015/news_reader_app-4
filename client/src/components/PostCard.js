@@ -64,14 +64,20 @@ class PostCard extends Component{
   render() {
     // debugger
     return (
-        <Card body border="light">
+        <Card body className="post-card-body" border="light">
+
           <Card.Header className="post-card-header">
-            Created at: {this.props.dateString}; By: {this.props.post.user.username}; Post Id: {this.props.post.id}
+            <Link to={`${this.props.post ? "/postcomments/" + this.props.post.id : 'posts'}`}>
+              {this.props.post ? this.props.post.title : "This Post is missing"}
+            <p style={{float:"right"}}>
+              {this.props.post.title && "read more..."}
+            </p>
+            </Link>
           </Card.Header>
 
-          <Link to={`${this.props.post ? "/postcomments/" + this.props.post.id : 'posts'}`}>
-            {this.props.post ? this.props.post.title : "This Post is missing"}
-          </Link>
+          <p>
+            Published: {this.props.dateString}; By: {this.props.post.user.username}; Post Id: {this.props.post.id}
+          </p>
 
           {/*
             <Card.Title>{this.props.post.title}</Card.Title>
@@ -90,16 +96,17 @@ class PostCard extends Component{
             <button className='button-noborder' type="submit" value="upVote"><i className="fas fa-thumbs-up"></i></button>
           </form>
 
+          <Button variant="light">
+            <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
+            </Button>
+
           <form className="inline-form-button" onSubmit = {this.handleOnClickDownVote}>
             <button className='button-noborder' type="submit" value="downVote"><i className="fa fa-thumbs-down"></i></button>
           </form>
 
-          <Button variant="light">
-            <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
-          </Button>
 
           <form className="inline-form-button" onSubmit = {this.handleOnClickDelete}>
-            <button className='button-noborder' type="submit" value="Delete Post"><i className="fa fa-trash" aria-hidden="true"></i></button>
+            <button className='button-noborder icon-red' type="submit" value="Delete Post"><i className="fa fa-trash" aria-hidden="true"></i></button>
           </form>
 
           {/*

@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
 
 export default function postShow(props) {
 
@@ -8,11 +7,11 @@ export default function postShow(props) {
     let timeString = postTime.toLocaleString();
 
     return (
-      <Card body className="single-post-container">
-        <Card.Header>{props.post.title}</Card.Header>
-        <Card.Text>{props.post.content}</Card.Text>
-        <Card.Footer>Published at: {timeString}</Card.Footer>
-      </Card>
+      <div className="single-post-container">
+        <h1>{props.post.title}</h1>
+        <p>{props.post.content}</p>
+        <p>Published at: {timeString}</p>
+      </div>
     )
   } else {
     let timeString = "Time is not available";

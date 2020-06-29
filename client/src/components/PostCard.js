@@ -86,11 +86,11 @@ class PostCard extends Component{
           </Button>
 
 
-          <form className="button-icon" onSubmit = {this.handleOnClick}>
+          <form className="inline-form-button" onSubmit = {this.handleOnClick}>
             <button className='button-noborder' type="submit" value="upVote"><i className="fas fa-thumbs-up"></i></button>
           </form>
 
-          <form className="button-icon" onSubmit = {this.handleOnClickDownVote}>
+          <form className="inline-form-button" onSubmit = {this.handleOnClickDownVote}>
             <button className='button-noborder' type="submit" value="downVote"><i className="fa fa-thumbs-down"></i></button>
           </form>
 
@@ -98,7 +98,7 @@ class PostCard extends Component{
             <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
           </Button>
 
-          <form className="button-icon" onSubmit = {this.handleOnClickDelete}>
+          <form className="inline-form-button" onSubmit = {this.handleOnClickDelete}>
             <button className='button-noborder' type="submit" value="Delete Post"><i className="fa fa-trash" aria-hidden="true"></i></button>
           </form>
 

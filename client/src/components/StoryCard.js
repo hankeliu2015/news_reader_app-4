@@ -31,15 +31,13 @@ class StoryCard extends Component{
         <Card body>
             <Link to={`${this.props.story ? "/comments/" + this.props.story.id : 'stories'}`}> {this.props.story ? this.props.story.title : "This Story is missing"}</Link>
 
-
             <Button variant="light">
-              Likes: {this.props.like + this.state.vote}
+              <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.like + this.state.vote}
             </Button>
-            <i className="fas fa-thumbs-up"></i>
 
             <Button variant="light">
               <form onSubmit = {this.handleOnClick}>
-                <input type="submit" value = "upVote"/>
+                <button className="button-noborder" type="submit" value = "upVote"><i className="fas fa-thumbs-up"></i></button>
               </form>
             </Button>
 

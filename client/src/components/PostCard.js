@@ -62,7 +62,6 @@ class PostCard extends Component{
   }
 
   render() {
-    // debugger
     return (
         <Card body className="post-card-body" border="light">
 

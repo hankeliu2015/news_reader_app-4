@@ -17,7 +17,7 @@ export default function Navbar() {
           <NavLink to="/">Hacker News Feed</NavLink>
           <NavLink to="/posts">Users Posts</NavLink>
           <NavLink to="/newpost">Post Your Story</NavLink>
-          <NavLink to="/newpost-beta">Post Story Beta</NavLink>
+          <NavLink to="/newpost-beta">Post Story (Beta)</NavLink>
           <NavLink to="/about">About(under construction)</NavLink>
         </div>
 

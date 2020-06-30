@@ -30,8 +30,7 @@ class Posts extends Component {
     if(!currentUser){
       userLoginReminder = <LoginReminder />;
     } else {
-
-
+      
       posts = this.props.posts.slice(0).map((post, index) => {
         let postDate = new Date(post.created_at)
         let dateString = postDate.toDateString()

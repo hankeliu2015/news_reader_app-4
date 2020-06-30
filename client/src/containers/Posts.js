@@ -30,19 +30,9 @@ class Posts extends Component {
     if(!currentUser){
       userLoginReminder = <LoginReminder />;
     } else {
-      
-      posts = this.props.posts.slice(0).map((post, index) => {
-        let postDate = new Date(post.created_at)
-        let dateString = postDate.toDateString()
-          return(
-            <li key={post.id}>
-              <PostCard post={post} postDate={postDate} dateString = {dateString} push = {this.props.history.push}/>
-            </li>
-          )
-        })
 
         {/*
-          posts = this.props.posts.slice(0).reverse().sort((p1, p2) => p2.like - p1.like).map((post, index) => {
+          posts = this.props.posts.slice(0).map((post, index) => {
           let postDate = new Date(post.created_at)
           let dateString = postDate.toDateString()
           return(
@@ -53,6 +43,15 @@ class Posts extends Component {
           })
           */}
 
+          posts = this.props.posts.slice(0).reverse().sort((p1, p2) => p2.like - p1.like).map((post, index) => {
+            let postDate = new Date(post.created_at)
+            let dateString = postDate.toDateString()
+            return(
+              <li key={post.id}>
+                <PostCard post={post} postDate={postDate} dateString = {dateString} push = {this.props.history.push}/>
+              </li>
+            )
+          })
     }
 
     return (

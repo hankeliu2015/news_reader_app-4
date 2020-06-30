@@ -8,14 +8,24 @@ import { deletePost } from '../actions/postDeleteAction';
 import { editPost } from '../actions/postEditAction';
 
 class PostCard extends Component{
+  // state = {
+  //   vote: 0,
+  //   id: this.props.post.id
+  // }
+
 
   handleOnClick = event => {
     event.preventDefault();
     let valueCSRF = document.querySelector('meta[name="csrf-token"]').content;
 
+    // this.setState({
+    //   vote: this.state.vote +1,
+    // })
 
     let voteValue = {vote: 1, id: this.props.post.id}
     this.props.likePost(this.props.post.id, voteValue, valueCSRF, );
+    // this.props.likePost(this.props.post.id, this.state, valueCSRF, );
+
   }
 
   handleOnClickDownVote = event => {
@@ -96,7 +106,10 @@ class PostCard extends Component{
           </form>
 
           <Button variant="light">
-            <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
+              {/*
+                <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like + this.state.vote}
+                */}
+                <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.post.like}
             </Button>
 
           <form className="inline-form-button" onSubmit = {this.handleOnClickDownVote}>
@@ -121,5 +134,11 @@ class PostCard extends Component{
   }
 }
 
+// const mapStateToProps = state => {
+//   return {
+//     vote: state.PostReducer.vote
+//   }
+// }
 
-export default connect(null, {likePost, deletePost, editPost})(PostCard);
+export default connect(null, {likePost, deletePost, editPost})(PostCard)
+// export default connect(mapStateToProps, {likePost, deletePost, editPost})(PostCard)

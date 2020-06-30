@@ -20,7 +20,7 @@ class StoryCard extends Component{
     })
     this.props.likeStory(this.state, valueCSRF);
   }
-
+  
   render () {
 
     // let currentStoryId = this.props.story.id

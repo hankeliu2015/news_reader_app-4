@@ -35,11 +35,9 @@ class StoryCard extends Component{
               <i className="fa fa-heart icon-red" aria-hidden="true"></i> {this.props.like + this.state.vote}
             </Button>
 
-            <Button variant="light">
-              <form onSubmit = {this.handleOnClick}>
-                <button className="button-noborder" type="submit" value = "upVote"><i className="fas fa-thumbs-up"></i></button>
-              </form>
-            </Button>
+            <form onSubmit = {this.handleOnClick}>
+              <button className="button-noborder" type="submit" value = "upVote"><i className="fas fa-thumbs-up"></i></button>
+            </form>
 
             {/*
               <Button variant="light">

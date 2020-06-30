@@ -118,6 +118,16 @@
   list-style-type: none;
   display: contents;
 }
+.story-cards ol li a{
+  color: #828282;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.story-cards ol li a:hover{
+  color: #000;
+  border-bottom: 1px dashed coral;
+
+}
 
 .story-cards ol li:nth-child(odd) .card{
   background-color: #fafaf0;

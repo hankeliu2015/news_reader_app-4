@@ -2,7 +2,12 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import { postUpload } from '../actions/postCreateAction';
 import currentUserFetch from '../actions/currentUserAction';
-
+import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
 
 class NewPost extends Component {
   state = {

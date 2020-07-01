@@ -19,6 +19,7 @@ import NewComment from './components/NewComment'
 import Container from 'react-bootstrap/Container';
 import About from './components/about';
 import "react-bootstrap/dist/react-bootstrap.min.js";
+import "bootswatch/dist/united/bootstrap.min.css";
 
 function App() {
   return (

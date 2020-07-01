@@ -37,8 +37,6 @@ class noneLoginPostNew extends Component {
             </ul>
             <form className="form-inline my-2 my-lg-0">
               <a href="/users/sign_up"><button className="btn btn-secondary my-2 my-sm-0 button-noborder"  type="submit">Login | Sign up</button></a>
-
-
             </form>
           </div>
         </nav>

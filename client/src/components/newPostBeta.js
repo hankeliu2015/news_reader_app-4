@@ -51,15 +51,15 @@ class NewPost extends Component {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Users Posts</a>
+                <p className="nav-link">Users Posts</p>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Post Your Story</a>
+                <p className="nav-link">Post Story</p>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
+                <p className="nav-link">About</p>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">

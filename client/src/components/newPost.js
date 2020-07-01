@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import NoneLoginPostNew from './noneLoginPostNew'
 import { connect } from 'react-redux'
 import { postUpload } from '../actions/postCreateAction';
 import currentUserFetch from '../actions/currentUserAction';
@@ -28,16 +29,19 @@ class NewPost extends Component {
 
   render() {
     const userName = this.props.user.username;
+    const noneLoginPostNewPage = <NoneLoginPostNew />
 
     return (
       <div>
-        <header className="post-form-header">
-          <div>
-            {!userName ? <p>Please have a simple user & password <a className="button" href="/users/sign_up">Sign up</a> to post your stories</p> : `Hi ${userName}, You can share your own story`}
-          </div>
-        </header>
+        {noneLoginPostNewPage}
 
         <form onSubmit={this.handleOnSubmit} className="post-form-container">
+          <section className="post-form-header">
+            <div>
+              {!userName ? <p>Please have a simple user & password <a className="button" href="/users/sign_up">Sign up</a> to post your stories</p> : `Hi ${userName}, You can share your own story`}
+            </div>
+          </section>
+
           <img src="https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592702004/logo_brush.png"></img>
           <label>Title</label>
           <input type="text" name="title" onChange={this.handleOnChange} value={this.state.title}></input>

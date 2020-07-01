@@ -6,6 +6,7 @@ class About extends Component{
     return (
       <div>
       <h1>Page Under Construction</h1>
+      <i class="fas fa-tools fa-5x"></i>
       </div>
     )
   }

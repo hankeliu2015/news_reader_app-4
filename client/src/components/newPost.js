@@ -46,6 +46,7 @@ class NewPost extends Component {
 
               <img src="https://res.cloudinary.com/dcyxkrt7p/image/upload/v1592702004/logo_brush.png"></img>
               <label>Title</label>
+
               <input type="text" name="title" onChange={this.handleOnChange} value={this.state.title}></input>
 
               <label>Content</label>

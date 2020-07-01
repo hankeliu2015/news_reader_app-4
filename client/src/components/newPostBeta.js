@@ -3,9 +3,6 @@ import { connect } from 'react-redux'
 import { postUpload } from '../actions/postCreateAction';
 import currentUserFetch from '../actions/currentUserAction';
 import Button from 'react-bootstrap/Button';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 
@@ -38,33 +35,6 @@ class NewPost extends Component {
       <div>
         {/*Bootswatch Testing*/}
         {/* Section for signed-on user*/}
-
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarColor01">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <a className="nav-link">Hacker News Feed</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#/posts">users Posts</a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#/about">About</a>
-              </li>
-            </ul>
-            <form className="form-inline my-2 my-lg-0">
-              <a >
-                <button className="btn btn-secondary my-2 my-sm-0" type="submit">Submit</button>
-              </a>
-            </form>
-          </div>
-        </nav>
 
         <div className="jumbotron">
           <h1 className="display-3">Hello, Henry!</h1>

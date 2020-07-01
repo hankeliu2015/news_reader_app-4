@@ -36,21 +36,26 @@ class NewPost extends Component {
 
     return (
       <div>
-
         {/*Bootswatch Testing*/}
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a className="navbar-brand" href="#">NewsReader</a>
+
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-              </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                <a className="nav-link" href="#">Hacker News Feed <span className="sr-only">(current)</span></a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">Users Posts</a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">Post Your Story</a>
               </li>
 
               <li className="nav-item">
@@ -58,7 +63,9 @@ class NewPost extends Component {
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
-              <button className="btn btn-secondary my-2 my-sm-0" type="submit">Login | Signup</button>
+              <a href="/users/sign_up"><button className="btn btn-secondary my-2 my-sm-0 button-noborder"  type="submit">Login | Sign up</button></a>
+
+
             </form>
           </div>
         </nav>
@@ -69,7 +76,7 @@ class NewPost extends Component {
           <hr className="my-4"></hr>
           <p>Devise security adds additional security features required by modern web applications. </p>
           <p className="lead">
-            <a className="btn btn-primary btn-lg" href="#" role="button">SignOn</a>
+            <a className="btn btn-primary btn-lg" href="users/sign_up" role="button">Sign Up</a>
           </p>
         </div>
 

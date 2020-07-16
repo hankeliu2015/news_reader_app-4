@@ -70,7 +70,7 @@ class NewPost extends Component {
         </div>
 
         <footer className="post-form-footer">
-          <p>NewsReader App, Copyrigth &copy; 2019</p>
+          <p>NewsReader App, Copyright &copy; 2019</p>
         </footer>
       </div>
     )
